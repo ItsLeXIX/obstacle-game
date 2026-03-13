@@ -1,5 +1,5 @@
-using System.Threading;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -11,9 +11,29 @@ public class PlayerMovement : MonoBehaviour
     public float jumpCd = 3f;
     public float nextJumpTime = 0f;
 
+    public InputActionReference moveAction;
+    public InputActionReference jumpAction;
+
+    private Vector2 moveInput;
+    private bool jumpQueued;
+
     private void Start()
     {
         InvokeRepeating("AddJump", 10f, 10f);
+    }
+
+    private void OnEnable()
+    {
+        moveAction.action.Enable();
+        jumpAction.action.Enable();
+        jumpAction.action.performed += OnJumpPerformed; 
+    }
+
+    private void OnDisable()
+    {
+        moveAction.action.Disable();
+        jumpAction.action.Disable();
+        jumpAction.action.performed -= OnJumpPerformed;
     }
     void FixedUpdate()
     {
@@ -21,25 +41,22 @@ public class PlayerMovement : MonoBehaviour
         velocity.z = forwardForce * Time.deltaTime;
         rigidBody.linearVelocity = velocity;
 
-        if (Input.GetKey("d"))
+        if (moveInput.x > 0.1f)
         {
             rigidBody.AddForce(sidewayForce * Time.deltaTime, 0, 0);
         }
 
-        if (Input.GetKey("a")) 
+        if (moveInput.x > -0.1f) 
         {
             rigidBody.AddForce(-sidewayForce * Time.deltaTime, 0, 0);
         }
 
-        if (Input.GetKey("space") && Time.time >= nextJumpTime)
+        if (jumpQueued && Time.time >= nextJumpTime)
         {
-            if (jumpCount > 0)
-            {
-                jumpCount--;
-                rigidBody.AddForce(0, jumpForce * Time.deltaTime, 0, ForceMode.Impulse);
-                nextJumpTime = Time.time + jumpCd;
-                Debug.Log("Jumped");
-            }
+            jumpCount--;
+            rigidBody.AddForce(0, jumpForce * Time.deltaTime, 0, ForceMode.Impulse);
+            nextJumpTime = Time.time + jumpCd;
+ 
         }
 
         if (rigidBody.position.y < -0.5)
@@ -47,6 +64,11 @@ public class PlayerMovement : MonoBehaviour
             FindObjectOfType<GameManager>().EndGame();
         }
 
+    }
+
+    private void OnJumpPerformed(InputAction.CallbackContext context)
+    {
+        jumpQueued = true;
     }
 
     public void AddJump()

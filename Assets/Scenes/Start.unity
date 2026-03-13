@@ -1963,6 +1963,8 @@ MonoBehaviour:
   jumpCount: 3
   jumpCd: 1
   nextJumpTime: 0
+  moveAction: {fileID: 7305703747518435992, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  jumpAction: {fileID: 4863687700208608430, guid: 052faaac586de48259a63d0c4782560b, type: 3}
 --- !u!54 &1027575141
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1988,7 +1990,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 114
   m_CollisionDetection: 0
 --- !u!65 &1027575142
 BoxCollider:
@@ -2122,8 +2124,8 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: 
+  m_DefaultControlScheme: Keyboard&Mouse
+  m_DefaultActionMap: Gameplay
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!1001 &1054592511
