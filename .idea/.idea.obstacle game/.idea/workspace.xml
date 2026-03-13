@@ -51,9 +51,6 @@
       <change afterPath="$PROJECT_DIR$/../../Timerloop 2024-02-25 20-21-27/Timerloop.app/Contents/MacOS/Timerloop" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../Timerloop 2024-02-25 20-21-27/Timerloop.app/Contents/PkgInfo" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../Timerloop 2024-02-25 20-21-27/Timerloop.app/Contents/_CodeSignature/CodeResources" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.obstacle game/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.obstacle game/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.obstacle game/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../build/Debug/Library.o" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../build/Debug/TerminKalander.o" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../build/Debug/test.o" afterDir="false" />
@@ -95,6 +92,13 @@
       <change afterPath="$PROJECT_DIR$/../../tests.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../NewFile.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.obstacle game/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.obstacle game/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.obstacle game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.obstacle game/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Start.scenetemplate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Start.scenetemplate.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/PlayerCollision.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/PlayerCollision.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +111,7 @@
     </persistenceIdMap>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -129,22 +133,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "configurable.group.tools",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.tools&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.3.9f1/Unity.app/Contents/MacOS/Unity" />
@@ -192,6 +196,8 @@
       <updated>1772145233813</updated>
       <workItem from="1772145237782" duration="2431000" />
       <workItem from="1772148100150" duration="60000" />
+      <workItem from="1773239046961" duration="2046000" />
+      <workItem from="1773243230545" duration="2150000" />
     </task>
     <servers />
   </component>
